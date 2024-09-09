@@ -1,0 +1,7 @@
+CREATE TABLE `vsbkursfilms`.`films` (`id` INT(5) NOT NULL AUTO_INCREMENT , `name_cz` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_czech_ci NOT NULL , `name_en` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL , `release_year` INT(4) NOT NULL , `director` VARCHAR(25) NOT NULL , `starring` VARCHAR(200) NOT NULL , `film_desc` VARCHAR(2000) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+
+
+INSERT INTO
+  `films` (`name_cz`, `name_en`, `release_year`, `director`, `starring`, `film_desc`)
+VALUES
+  ('Pád do ticha', 'Touching the Void', '2003', 'Kevin Macdonald', 'Nicholas Aaron, Richard Hawking, Brendan Mackey, Joe Simpson, Simon Yates', 'Film byl natočen podle stejnojmenné knihy Joe Simpsona.');
